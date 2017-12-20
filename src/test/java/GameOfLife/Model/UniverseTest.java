@@ -33,7 +33,7 @@ public class UniverseTest {
     @Test
     public void shouldVerityVitalityOfCellAtOneCommaThreeIsAlive(){
         Cell cellAtOneCommaThree = cells.stream()
-                .filter(cell -> cell.getPositionX() ==1 && cell.getPositionY() ==3)
+                .filter(cell -> cell.getPositionX() ==2 && cell.getPositionY() ==4)
                 .findAny().orElse(null);
         Assert.assertEquals(VitalityOfCell.ALIVE,cellAtOneCommaThree.getStatus());
     }

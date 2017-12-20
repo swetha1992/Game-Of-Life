@@ -12,7 +12,6 @@ import java.util.List;
 
 public class Game {
     List<Cell> aliveCells;
-    Universe universe;
     public Game(List<Cell> aliveCells) {
         this.aliveCells = aliveCells;
     }
@@ -65,8 +64,7 @@ public class Game {
                 }
             }
         }
-        universe.setCells(cells);
-        return universe;
+        return new Universe(cells);
     }
     private Boolean isCellVital(int positionX,int positionY){
         for (Cell cell : aliveCells){
@@ -78,19 +76,18 @@ public class Game {
     }
 
     public void play() {
-        buildUniverse();
-        makeTransitionOnUniverse();
+        makeTransitionOn(buildUniverse());
     }
 
-    public void makeTransitionOnUniverse() {
+    public Universe makeTransitionOn(Universe universe) {
         for (Cell cell : universe.getCells()){
             applyTransitionOn(cell);
-
         }
+        return universe;
     }
 
     private void applyTransitionOn(Cell cell) {
-        int countOfLiveNeighbours = universe.determineCountOfLiveNeighbours(cell);
+        int countOfLiveNeighbours = buildUniverse().determineCountOfLiveNeighbours(cell);
         if (cell.getStatus().equals(VitalityOfCell.ALIVE)) {
             if (countOfLiveNeighbours < 2 || countOfLiveNeighbours > 3) {
                 cell.setStatus(VitalityOfCell.DEAD);

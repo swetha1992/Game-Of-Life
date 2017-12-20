@@ -102,12 +102,18 @@ public class GameTest {
     @Test
     public void shouldMakeTransitionOnUniverse(){
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(2,5, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(0,1, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1,0,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(2,1,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(0,2, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1,2, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        Universe universe = game.buildUniverse();
-        game.makeTransitionOnUniverse();
+        game.buildUniverse();
+        game.buildUniverse().getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
+        Assert.assertEquals(25,game.buildUniverse().getCells().size());
+        Universe universe = game.makeTransitionOn(game.buildUniverse());
+        System.out.println("-----");
+        universe.getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
     }
 
 }

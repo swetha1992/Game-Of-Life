@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d11d55c-e5b1-4f4e-9456-f0fd7090b7f7" name="Default" comment="" />
+    <list default="true" id="3d11d55c-e5b1-4f4e-9456-f0fd7090b7f7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameOfLife/Main.java" afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java" afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameOfLife/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/GameOfLife/GameTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java" afterPath="$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GameOfLife/Model/UniverseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/GameOfLife/Model/UniverseTest.class" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,19 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
-              <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#2745#2746#0" expanded="true" />
+                <element signature="e#2794#2795#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,27 +48,17 @@
       <file leaf-file-name="Universe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
                 <element signature="e#198#199#0" expanded="true" />
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -72,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniverseTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UniverseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="525">
+              <caret line="35" column="82" lean-forward="false" selection-start-line="35" selection-start-column="82" selection-end-line="35" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,7 +88,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="209">
               <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,8 +100,8 @@
       <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameOfLife/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+            <state relative-caret-position="471">
+              <caret line="112" column="30" lean-forward="false" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,25 +109,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="VitalityOfCell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/VitalityOfCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvalidCoordinatesException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Exceptions/InvalidCoordinatesException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#179#180#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -168,6 +156,9 @@
       <find>makeTransitionOn</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -183,11 +174,11 @@
         <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Exceptions/InvalidCoordinatesException.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Game.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Model/Cell.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Model/Cell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameOfLife/GameTest.java" />
       </list>
     </option>
@@ -219,6 +210,7 @@
     <option name="width" value="1420" />
     <option name="height" value="770" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -365,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UniverseTest">
+  <component name="RunManager" selected="JUnit.GameTest.shouldMakeTransitionOnUniverse">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -412,6 +404,56 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="GameTest.shouldBuildUniverseWithCellCountTwenty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="GameOfLife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GameOfLife" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="GameOfLife" />
+      <option name="MAIN_CLASS_NAME" value="GameOfLife.GameTest" />
+      <option name="METHOD_NAME" value="shouldBuildUniverseWithCellCountTwenty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="GameTest.shouldMakeTransitionOnUniverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="GameOfLife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GameOfLife" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="GameOfLife" />
+      <option name="MAIN_CLASS_NAME" value="GameOfLife.GameTest" />
+      <option name="METHOD_NAME" value="shouldMakeTransitionOnUniverse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="UniverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -437,7 +479,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UniverseTest.shouldVerityVitalityOfCellAtOneCommaThreeIsAlive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="GameOfLife.Model.*" />
@@ -449,57 +491,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="GameOfLife.Model" />
       <option name="MAIN_CLASS_NAME" value="GameOfLife.Model.UniverseTest" />
-      <option name="METHOD_NAME" value="shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="GameOfLife.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GameOfLife" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="GameOfLife.Model" />
-      <option name="MAIN_CLASS_NAME" value="GameOfLife.Model.UniverseTest" />
-      <option name="METHOD_NAME" value="shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="UniverseTest.shouldVerityVitalityOfCellAtOneCommaFourIsDead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="GameOfLife.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GameOfLife" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="GameOfLife.Model" />
-      <option name="MAIN_CLASS_NAME" value="GameOfLife.Model.UniverseTest" />
-      <option name="METHOD_NAME" value="shouldVerityVitalityOfCellAtOneCommaFourIsDead" />
+      <option name="METHOD_NAME" value="shouldVerityVitalityOfCellAtOneCommaThreeIsAlive" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -573,19 +565,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerityVitalityOfCellAtOneCommaFourIsDead" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UniverseTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UniverseTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerityVitalityOfCellAtOneCommaThreeIsAlive" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldBuildUniverseWithCellCountTwenty" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.shouldMakeTransitionOnUniverse" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UniverseTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.shouldMakeTransitionOnUniverse" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerityVitalityOfCellAtOneCommaFourIsDead" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UniverseTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldBuildUniverseWithCellCountTwenty" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UniverseTest.shouldVerityVitalityOfCellAtOneCommaThreeIsAlive" />
       </list>
     </recent_temporary>
   </component>
@@ -606,40 +598,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest - 2017.12.20 at 16h 20m 11s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 07m 00s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest - 2017.12.20 at 16h 21m 41s.xml">
-      <configuration name="UniverseTest" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 10m 22s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour - 2017.12.20 at 15h 56m 27s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 11m 50s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour - 2017.12.20 at 15h 59m 19s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 13m 03s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour - 2017.12.20 at 16h 01m 46s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtOneCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 13m 28s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour - 2017.12.20 at 16h 02m 38s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 13m 54s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour - 2017.12.20 at 16h 05m 14s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 17m 55s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour - 2017.12.20 at 16h 07m 18s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 18m 08s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour - 2017.12.20 at 16h 07m 44s.xml">
-      <configuration name="UniverseTest.shouldVerifyIfCountOfNeighbouringVitalCellsIsOneForCellAtThreeCommaFour" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 25m 32s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniverseTest_shouldVerityVitalityOfCellAtOneCommaFourIsDead - 2017.12.20 at 16h 00m 04s.xml">
-      <configuration name="UniverseTest.shouldVerityVitalityOfCellAtOneCommaFourIsDead" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldMakeTransitionOnUniverse - 2017.12.20 at 17h 25m 40s.xml">
+      <configuration name="GameTest.shouldMakeTransitionOnUniverse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1440" height="815" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -649,18 +640,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27994618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08344549" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4535666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -682,8 +673,16 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java</url>
+          <line>16</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -719,14 +718,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Exception/InvalidCordinates.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTest/Game.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/VitalityOfCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -743,24 +734,6 @@
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#179#180#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,42 +765,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/VitalityOfCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Model/Universe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#234#235#0" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameOfLife/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+        <state relative-caret-position="471">
+          <caret line="112" column="30" lean-forward="false" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -836,10 +827,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameOfLife/Model/UniverseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        <state relative-caret-position="525">
+          <caret line="35" column="82" lean-forward="false" selection-start-line="35" selection-start-column="82" selection-end-line="35" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLife/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
           </folding>
         </state>
       </provider>

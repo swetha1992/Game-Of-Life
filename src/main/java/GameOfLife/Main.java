@@ -16,7 +16,6 @@ public class Main {
         inputCells.add(new Cell(3,8,VitalityOfCell.ALIVE));
         Game game=new Game(inputCells);
         game.play();
-
     }
 }
 

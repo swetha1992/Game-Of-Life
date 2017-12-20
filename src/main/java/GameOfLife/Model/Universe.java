@@ -15,7 +15,10 @@ public class Universe {
     }
     public VitalityOfCell getVitalityOfCellAt(int positionX, int positionY){
         Cell cell = getCells().stream().filter(cellInUniverse -> cellInUniverse.getPositionX()==positionX && cellInUniverse.getPositionY() == positionY).findAny().orElse(null);
-       return cell.getStatus();
+        if(cell==null)
+            return VitalityOfCell.DEAD;
+        return cell.getStatus();
+
     }
 
     public void setCells(List<Cell> cells) {
