@@ -75,8 +75,9 @@ public class Game {
         return Boolean.FALSE;
     }
 
-    public void play() {
-        makeTransitionOn(buildUniverse());
+    public List<Cell> play() {
+        Universe universe =makeTransitionOn(buildUniverse());
+        return universe.getCells();
     }
 
     public Universe makeTransitionOn(Universe universe) {
@@ -93,7 +94,7 @@ public class Game {
                 cell.setStatus(VitalityOfCell.DEAD);
             }
         }else if(cell.getStatus().equals(VitalityOfCell.DEAD)){
-            if(countOfLiveNeighbours ==3){
+            if(countOfLiveNeighbours == 3){
                 cell.setStatus(VitalityOfCell.ALIVE);
             }
         }

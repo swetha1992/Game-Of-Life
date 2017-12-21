@@ -29,15 +29,20 @@ public class Universe {
         int positionX= cell.getPositionX();
         int positionY = cell.getPositionY();
         List<VitalityOfCell> vitalityOfNeighbouringCells = new ArrayList<>();
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX,positionY-1));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY-1));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY+1));
+
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX,positionY+1));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY+1));
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX,positionY-1));
+
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY));
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY));
+
+
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY-1));
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY+1));
+
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY-1));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY));
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY+1));
+
         return (int) vitalityOfNeighbouringCells.stream().filter(vitalityOfCell -> vitalityOfCell.equals(vitalityOfCell.ALIVE)).count();
     }
 }
