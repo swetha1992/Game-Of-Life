@@ -34,7 +34,7 @@ public class Universe {
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX,positionY-1));
 
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY));
-        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX-1,positionY));
+        vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY));
 
 
         vitalityOfNeighbouringCells.add(getVitalityOfCellAt(positionX+1,positionY-1));
