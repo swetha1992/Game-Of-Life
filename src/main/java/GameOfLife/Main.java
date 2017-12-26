@@ -1,6 +1,5 @@
 package GameOfLife;
 
-import GameOfLife.Exceptions.InvalidCoordinatesException;
 import GameOfLife.Game.Game;
 import GameOfLife.Model.Cell;
 import GameOfLife.Model.VitalityOfCell;
@@ -9,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws Exception, InvalidCoordinatesException {
+    public static void main(String[] args) {
         List<Cell> inputCells = new ArrayList<>();
         inputCells.add(new Cell(1,1, VitalityOfCell.ALIVE));
         inputCells.add(new Cell(1,2,VitalityOfCell.ALIVE));

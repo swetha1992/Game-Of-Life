@@ -22,15 +22,7 @@ public class Cell {
         this.positionY = positionY;
         this.status = status;
     }
-
-    public void setPositionX(int positionX) {
-        this.positionX = positionX;
-    }
-
-    public void setPositionY(int positionY) {
-        this.positionY = positionY;
-    }
-
+    
     public void setStatus(VitalityOfCell status) {
         this.status = status;
     }

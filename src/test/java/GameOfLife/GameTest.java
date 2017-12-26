@@ -1,7 +1,7 @@
 package GameOfLife;
 
-import GameOfLife.Exceptions.InvalidCoordinatesException;
 import GameOfLife.Game.Game;
+import GameOfLife.Game.UniverseBuilder;
 import GameOfLife.Model.Cell;
 import GameOfLife.Model.Universe;
 import GameOfLife.Model.VitalityOfCell;
@@ -14,29 +14,13 @@ import java.util.List;
 
 public class GameTest {
 
-    @Test
-    public void shouldValidateTrueForPositiveCordinates() throws Exception, InvalidCoordinatesException {
-        List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,2, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(2,3,VitalityOfCell.ALIVE));
-        Game game = new Game(aliveCells);
-        Assert.assertTrue(game.validateInputCoordinates(aliveCells));
-    }
-    @Test(expected = InvalidCoordinatesException.class)
-    public void shouldThrowExceptionForNegativeCoordinates() throws Exception, InvalidCoordinatesException {
-        List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,-2, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(2,3,VitalityOfCell.ALIVE));
-        Game game = new Game(aliveCells);
-        game.validateInputCoordinates(aliveCells);
-    }
-    @Test
+   @Test
     public void shouldVerifyIfMaximumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
         List<Cell> aliveCells = new ArrayList<>();
         aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
-        Game game = new Game(aliveCells);
-        Assert.assertEquals(4,game.determineMaximunOfXCoordinates());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(4,universeBuilder.determineMaximunOfXCoordinates());
     }
     @Test
     public void shouldVerifyIfMinimumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
@@ -44,7 +28,8 @@ public class GameTest {
         aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        Assert.assertEquals(1,game.determineMinimumOfXCoordinates());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(1,universeBuilder.determineMinimumOfXCoordinates());
     }
 
     @Test
@@ -53,7 +38,8 @@ public class GameTest {
         aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        Assert.assertEquals(12,game.determineMaximunOfYCoordinates());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(12,universeBuilder.determineMaximunOfYCoordinates());
     }
     @Test
     public void shouldVerifyIfMinimumOfYIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
@@ -61,7 +47,8 @@ public class GameTest {
         aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        Assert.assertEquals(6,game.determineMinimumOfYCoordinates());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(6,universeBuilder.determineMinimumOfYCoordinates());
     }
     @Test
     public void shouldBuildUniverseWithCellCountTwenty(){
@@ -70,8 +57,8 @@ public class GameTest {
         aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        game.buildUniverse();
-        Assert.assertEquals(20,game.buildUniverse().getCells().size());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(20,universeBuilder.buildUniverse().getCells().size());
 
     }
     @Test
@@ -81,8 +68,8 @@ public class GameTest {
         aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        game.buildUniverse();
-        List<Cell> cells= game.buildUniverse().getCells();
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        List<Cell> cells= universeBuilder.buildUniverse().getCells();
         long liveCellCount = cells.stream().filter(cell -> cell.getStatus().equals(VitalityOfCell.ALIVE)).count();
         Assert.assertEquals(3,liveCellCount);
 
@@ -94,8 +81,8 @@ public class GameTest {
         aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        game.buildUniverse();
-        List<Cell> cells= game.buildUniverse().getCells();
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        List<Cell> cells= universeBuilder.buildUniverse().getCells();
         long liveCellCount = cells.stream().filter(cell -> cell.getStatus().equals(VitalityOfCell.DEAD)).count();
         Assert.assertEquals(17,liveCellCount);
     }
@@ -108,10 +95,10 @@ public class GameTest {
         aliveCells.add(new Cell(0,2, VitalityOfCell.ALIVE));
         aliveCells.add(new Cell(1,2, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
-        game.buildUniverse();
-        game.buildUniverse().getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
-        Assert.assertEquals(25,game.buildUniverse().getCells().size());
-        Universe universe = game.makeTransitionOn(game.buildUniverse());
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        universeBuilder.buildUniverse().getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
+        Assert.assertEquals(25,universeBuilder.buildUniverse().getCells().size());
+        Universe universe = game.makeTransition();
         System.out.println("-----");
         universe.getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
     }
