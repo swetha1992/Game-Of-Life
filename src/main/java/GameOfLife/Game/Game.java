@@ -11,12 +11,13 @@ public class Game {
     List<Cell> aliveCells;
     UniverseBuilder universeBuilder;
     Universe universe;
+
     public Game(List<Cell> aliveCells) {
         this.aliveCells = aliveCells;
         createUniverse(aliveCells);
     }
 
-    private void createUniverse(List<Cell> aliveCells){
+    private void createUniverse(List<Cell> aliveCells) {
         universeBuilder = new UniverseBuilder(aliveCells);
         universe = universeBuilder.buildUniverse();
     }
@@ -27,7 +28,7 @@ public class Game {
     }
 
     public Universe makeTransition() {
-        for (Cell cell : universe.getCells()){
+        for (Cell cell : universe.getCells()) {
             applyTransitionOn(cell);
         }
         return universe;
@@ -39,8 +40,8 @@ public class Game {
             if (countOfLiveNeighbours < 2 || countOfLiveNeighbours > 3) {
                 cell.setStatus(VitalityOfCell.DEAD);
             }
-        }else if(cell.getStatus().equals(VitalityOfCell.DEAD)){
-            if(countOfLiveNeighbours == 3){
+        } else if (cell.getStatus().equals(VitalityOfCell.DEAD)) {
+            if (countOfLiveNeighbours == 3) {
                 cell.setStatus(VitalityOfCell.ALIVE);
             }
         }

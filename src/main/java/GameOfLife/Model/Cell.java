@@ -5,6 +5,12 @@ public class Cell {
     int positionY;
     VitalityOfCell status;
 
+    public Cell(int positionX, int positionY, VitalityOfCell status) {
+        this.positionX = positionX;
+        this.positionY = positionY;
+        this.status = status;
+    }
+
     public int getPositionX() {
         return positionX;
     }
@@ -17,12 +23,6 @@ public class Cell {
         return status;
     }
 
-    public Cell(int positionX, int positionY, VitalityOfCell status) {
-        this.positionX = positionX;
-        this.positionY = positionY;
-        this.status = status;
-    }
-    
     public void setStatus(VitalityOfCell status) {
         this.status = status;
     }

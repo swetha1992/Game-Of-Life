@@ -14,93 +14,99 @@ import java.util.List;
 
 public class GameTest {
 
-   @Test
-    public void shouldVerifyIfMaximumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
-        List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
-        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        Assert.assertEquals(4,universeBuilder.determineMaximunOfXCoordinates());
-    }
     @Test
-    public void shouldVerifyIfMinimumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
+    public void shouldVerifyIfMaximumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
-        Game game = new Game(aliveCells);
+        aliveCells.add(new Cell(1, 12, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 6, VitalityOfCell.ALIVE));
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        Assert.assertEquals(1,universeBuilder.determineMinimumOfXCoordinates());
+        Assert.assertEquals(4, universeBuilder.determineMaximunOfXCoordinates());
     }
 
     @Test
-    public void shouldVerifyIfMaximumOfYIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
+    public void shouldVerifyIfMinimumOfXIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1, 12, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 6, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        Assert.assertEquals(12,universeBuilder.determineMaximunOfYCoordinates());
+        Assert.assertEquals(1, universeBuilder.determineMinimumOfXCoordinates());
     }
+
     @Test
-    public void shouldVerifyIfMinimumOfYIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix(){
+    public void shouldVerifyIfMaximumOfYIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(1,12, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,6,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1, 12, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 6, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        Assert.assertEquals(6,universeBuilder.determineMinimumOfYCoordinates());
+        Assert.assertEquals(12, universeBuilder.determineMaximunOfYCoordinates());
     }
+
     @Test
-    public void shouldBuildUniverseWithCellCountTwenty(){
+    public void shouldVerifyIfMinimumOfYIsThreeForInputsAtOneCommaTwoAndTwelveCommaSix() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(2,5, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1, 12, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 6, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        Assert.assertEquals(20,universeBuilder.buildUniverse().getCells().size());
+        Assert.assertEquals(6, universeBuilder.determineMinimumOfYCoordinates());
+    }
+
+    @Test
+    public void shouldBuildUniverseWithCellCountTwenty() {
+        List<Cell> aliveCells = new ArrayList<>();
+        aliveCells.add(new Cell(2, 5, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 4, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(3, 4, VitalityOfCell.ALIVE));
+        Game game = new Game(aliveCells);
+        UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
+        Assert.assertEquals(20, universeBuilder.buildUniverse().getCells().size());
 
     }
+
     @Test
-    public void shouldBuildUniverseWithAliveCellCountThree(){
+    public void shouldBuildUniverseWithAliveCellCountThree() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(2,5, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(2, 5, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 4, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(3, 4, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        List<Cell> cells= universeBuilder.buildUniverse().getCells();
+        List<Cell> cells = universeBuilder.buildUniverse().getCells();
         long liveCellCount = cells.stream().filter(cell -> cell.getStatus().equals(VitalityOfCell.ALIVE)).count();
-        Assert.assertEquals(3,liveCellCount);
+        Assert.assertEquals(3, liveCellCount);
 
     }
+
     @Test
-    public void shouldBuildUniverseWithDeadCellCountSeventeen(){
+    public void shouldBuildUniverseWithDeadCellCountSeventeen() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(2,5, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(4,4,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(3,4,VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(2, 5, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(4, 4, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(3, 4, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        List<Cell> cells= universeBuilder.buildUniverse().getCells();
+        List<Cell> cells = universeBuilder.buildUniverse().getCells();
         long liveCellCount = cells.stream().filter(cell -> cell.getStatus().equals(VitalityOfCell.DEAD)).count();
-        Assert.assertEquals(17,liveCellCount);
+        Assert.assertEquals(17, liveCellCount);
     }
+
     @Test
-    public void shouldMakeTransitionOnUniverse(){
+    public void shouldMakeTransitionOnUniverse() {
         List<Cell> aliveCells = new ArrayList<>();
-        aliveCells.add(new Cell(0,1, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(1,0,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(2,1,VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(0,2, VitalityOfCell.ALIVE));
-        aliveCells.add(new Cell(1,2, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(0, 1, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1, 0, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(2, 1, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(0, 2, VitalityOfCell.ALIVE));
+        aliveCells.add(new Cell(1, 2, VitalityOfCell.ALIVE));
         Game game = new Game(aliveCells);
         UniverseBuilder universeBuilder = new UniverseBuilder(aliveCells);
-        universeBuilder.buildUniverse().getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
-        Assert.assertEquals(25,universeBuilder.buildUniverse().getCells().size());
+        universeBuilder.buildUniverse().getCells().forEach(cell -> System.out.println(cell.getPositionX() + "," + cell.getPositionY() + "," + cell.getStatus()));
+        Assert.assertEquals(25, universeBuilder.buildUniverse().getCells().size());
         Universe universe = game.makeTransition();
         System.out.println("-----");
-        universe.getCells().forEach(cell -> System.out.println(cell.getPositionX() +","+cell.getPositionY() + "," + cell.getStatus()));
+        universe.getCells().forEach(cell -> System.out.println(cell.getPositionX() + "," + cell.getPositionY() + "," + cell.getStatus()));
     }
 
 }
